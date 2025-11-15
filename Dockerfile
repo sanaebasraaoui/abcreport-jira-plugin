@@ -1,14 +1,13 @@
 # Use Node.js 20
 FROM node:20-alpine
 
-# Set working directory
-WORKDIR /app
+# Set working directory to backend
+WORKDIR /app/backend
 
 # Copy backend package files
-COPY backend/package*.json ./backend/
+COPY backend/package*.json ./
 
 # Install ALL dependencies (including devDependencies for build)
-WORKDIR /app/backend
 RUN npm install
 
 # Copy backend source code
