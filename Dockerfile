@@ -7,15 +7,18 @@ WORKDIR /app
 # Copy backend package files
 COPY backend/package*.json ./backend/
 
-# Install backend dependencies
+# Install ALL dependencies (including devDependencies for build)
 WORKDIR /app/backend
-RUN npm ci --only=production
+RUN npm ci
 
 # Copy backend source code
 COPY backend/ ./
 
 # Build the TypeScript code
 RUN npm run build
+
+# Remove devDependencies to reduce image size
+RUN npm prune --production
 
 # Expose port (Railway will set PORT env var)
 EXPOSE 3001
