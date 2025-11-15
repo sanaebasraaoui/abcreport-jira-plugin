@@ -8,4 +8,6 @@ README.md
 .env.local
 frontend
 *.md
-
+Procfile
+nixpacks.toml
+railway.json
