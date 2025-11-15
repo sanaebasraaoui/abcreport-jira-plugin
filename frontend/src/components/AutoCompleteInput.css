@@ -1,0 +1,112 @@
+.autocomplete-wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 200px;
+}
+
+.autocomplete-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.autocomplete-input {
+  width: 100%;
+  padding: 10px 14px 10px 14px;
+  border: 2px solid #dfe1e6;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  padding-right: 40px;
+}
+
+.autocomplete-input:focus {
+  outline: none;
+  border-color: #0052cc;
+}
+
+.autocomplete-input:disabled {
+  background-color: #f4f5f7;
+  cursor: not-allowed;
+}
+
+.autocomplete-spinner {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #0052cc;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.autocomplete-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #dfe1e6;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.autocomplete-suggestion {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #f4f5f7;
+  transition: background-color 0.1s;
+}
+
+.autocomplete-suggestion:last-child {
+  border-bottom: none;
+}
+
+.autocomplete-suggestion:hover,
+.autocomplete-suggestion.selected {
+  background-color: #f4f5f7;
+}
+
+.suggestion-content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.5;
+}
+
+.suggestion-key {
+  font-weight: 600;
+  color: #0052cc;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+}
+
+.suggestion-separator {
+  color: #6b778c;
+  font-size: 14px;
+}
+
+.suggestion-summary {
+  color: #172b4d;
+  font-size: 14px;
+  flex: 1;
+}
+

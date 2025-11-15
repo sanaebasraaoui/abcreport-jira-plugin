@@ -1,0 +1,86 @@
+[
+  {
+    "id": "d1d6a8ee-7238-4c05-9e29-c67e2105c50d",
+    "name": "Default",
+    "description": "Default template matching original behavior",
+    "userId": "sanaebasraoui@gmail.com",
+    "isShared": false,
+    "fieldMapping": {
+      "categoryField": "fields.parent.fields.summary",
+      "initiativeField": "fields.labels",
+      "issueItemField": "fields.summary",
+      "multiValueHandling": "join",
+      "multiValueSeparator": ", "
+    },
+    "issueSelection": {
+      "maxDepth": 1,
+      "includeNestedChildren": false,
+      "parentGroupingField": "fields.parent.key"
+    },
+    "createdAt": "2025-11-15T18:35:51.436Z",
+    "updatedAt": "2025-11-15T18:35:51.436Z"
+  },
+  {
+    "name": "Test Template",
+    "description": "Template de test",
+    "userId": "test@example.com",
+    "isShared": false,
+    "fieldMapping": {
+      "categoryField": "fields.parent.fields.summary",
+      "initiativeField": "fields.labels",
+      "issueItemField": "fields.summary",
+      "multiValueHandling": "join",
+      "multiValueSeparator": ", "
+    },
+    "issueSelection": {
+      "maxDepth": 1,
+      "includeNestedChildren": false,
+      "parentGroupingField": "fields.parent.key"
+    },
+    "id": "57ffec46-c09d-46be-a833-0167cee7da91",
+    "createdAt": "2025-11-15T18:57:08.514Z",
+    "updatedAt": "2025-11-15T18:57:08.514Z"
+  },
+  {
+    "name": "test",
+    "description": "",
+    "userId": "sanaebasraoui@gmail.com",
+    "isShared": false,
+    "fieldMapping": {
+      "categoryField": "fields.issuetype.name",
+      "initiativeField": "fields.labels",
+      "issueItemField": "fields.summary",
+      "multiValueHandling": "join",
+      "multiValueSeparator": ", "
+    },
+    "issueSelection": {
+      "maxDepth": 1,
+      "includeNestedChildren": false,
+      "parentGroupingField": "fields.parent.key"
+    },
+    "id": "38cd254c-d031-4b7e-a177-a012dc804a37",
+    "createdAt": "2025-11-15T18:59:30.093Z",
+    "updatedAt": "2025-11-15T19:24:05.537Z"
+  },
+  {
+    "name": "zertrthr",
+    "description": "",
+    "userId": "sanaebasraoui@gmail.com",
+    "isShared": true,
+    "fieldMapping": {
+      "categoryField": "fields.parent.fields.summary",
+      "initiativeField": "fields.issuetype.name",
+      "issueItemField": "fields.issuetype.name",
+      "multiValueHandling": "join",
+      "multiValueSeparator": ", "
+    },
+    "issueSelection": {
+      "maxDepth": 1,
+      "includeNestedChildren": true,
+      "parentGroupingField": "fields.parent.key"
+    },
+    "id": "2a06cdc6-9f98-4763-951d-1e4f57ce3b3a",
+    "createdAt": "2025-11-15T19:10:17.056Z",
+    "updatedAt": "2025-11-15T19:10:17.056Z"
+  }
+]

@@ -1,0 +1,207 @@
+.timesheet-card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.timesheet-title {
+  margin: 0 0 20px 0;
+  color: #172b4d;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #0052cc;
+}
+
+.timesheet-section {
+  margin-bottom: 24px;
+}
+
+.timesheet-section:last-child {
+  margin-bottom: 0;
+}
+
+.timesheet-section-title {
+  margin: 0 0 16px 0;
+  color: #172b4d;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6b778c;
+}
+
+.timesheet-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px;
+  background-color: #f4f5f7;
+  border-radius: 4px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 150px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #6b778c;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.stat-value.primary {
+  color: #0052cc;
+}
+
+.stat-value.success {
+  color: #006644;
+}
+
+.stat-value.warning {
+  color: #ff991f;
+}
+
+.timesheet-table-container {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.timesheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.timesheet-table thead {
+  background-color: #f4f5f7;
+}
+
+.timesheet-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  color: #6b778c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #dfe1e6;
+}
+
+.timesheet-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f4f5f7;
+  font-size: 14px;
+}
+
+.timesheet-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.ticket-key {
+  font-weight: 600;
+  color: #0052cc;
+  font-family: 'Courier New', monospace;
+}
+
+.ticket-summary {
+  color: #172b4d;
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time-value {
+  font-weight: 600;
+  color: #172b4d;
+  font-family: 'Courier New', monospace;
+}
+
+.time-value.success {
+  color: #006644;
+}
+
+.time-value.warning {
+  color: #ff991f;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* To Do statuses (English and French) */
+.status-to-do,
+.status-a-faire,
+.status-open,
+.status-ready,
+.status-pret,
+.status-nouveau,
+.status-nouvelle,
+.status-backlog {
+  background-color: #e3fcef;
+  color: #006644;
+}
+
+/* In Progress statuses (English and French) */
+.status-in-progress,
+.status-en-cours,
+.status-in-development,
+.status-en-developpement,
+.status-testing,
+.status-en-test,
+.status-en-revue,
+.status-review,
+.status-code-review {
+  background-color: #deebff;
+  color: #0052cc;
+}
+
+/* Done statuses (English and French) */
+.status-done,
+.status-termine,
+.status-terminé,
+.status-closed,
+.status-resolved,
+.status-resolu,
+.status-complete,
+.status-fini {
+  background-color: #e3fcef;
+  color: #006644;
+}
+
+@media (max-width: 768px) {
+  .timesheet-stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .stat-item {
+    width: 100%;
+  }
+
+  .timesheet-table {
+    font-size: 12px;
+  }
+
+  .timesheet-table th,
+  .timesheet-table td {
+    padding: 8px;
+  }
+}
+
