@@ -4,10 +4,6 @@
   "description": "ABC Manager Weekly Report - Jira Connect Plugin",
   "private": true,
   "main": "backend/dist/server.js",
-  "scripts": {
-    "build": "echo 'Build handled by Dockerfile'",
-    "start": "echo 'Start handled by Dockerfile'"
-  },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
