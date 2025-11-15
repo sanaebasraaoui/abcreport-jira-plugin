@@ -5,8 +5,8 @@
   "private": true,
   "main": "backend/dist/server.js",
   "scripts": {
-    "build": "cd backend && npm install && npm run build",
-    "start": "cd backend && npm start"
+    "build": "echo 'Build handled by Dockerfile'",
+    "start": "echo 'Start handled by Dockerfile'"
   },
   "engines": {
     "node": ">=18.0.0",
