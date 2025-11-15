@@ -16,6 +16,10 @@ COPY backend/ ./
 # Build the TypeScript code
 RUN npm run build
 
+# Copy atlassian-connect.json from project root
+# The server looks for it at ../atlassian-connect.json relative to backend/
+COPY atlassian-connect.json /app/atlassian-connect.json
+
 # Remove devDependencies to reduce image size
 RUN npm prune --production
 
